@@ -15,9 +15,7 @@ A simple 2FA password generator where the password is refreshed every 12 seconds
 * Ensure `npm` is configured on the system
 * If required to install dependencies manually:
 	> npm i nodemon --save-dev;
-	> npm i moment -S;
-	> npm i axios -S;
-	> npm i randomstring -S
+	> npm i moment axios randomstring -S;
 
 ### Executing program
 * Step 1: Open a UNIX terminal e.g., GitBash
