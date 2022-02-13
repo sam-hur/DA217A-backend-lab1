@@ -14,9 +14,9 @@ A simple 2FA password generator where the password is refreshed every 12 seconds
 * Clone from github https://github.com/sam-hur/DA217A-backend-lab1 or download as zip.
 * Ensure `npm` is configured on the system
 * If required to install dependencies manually:
-	> npm i nodemon --save-dev
-	> npm i moment -S
-	> npm i axios -S
+	> npm i nodemon --save-dev;
+	> npm i moment -S;
+	> npm i axios -S;
 	> npm i randomstring -S
 
 ### Executing program
