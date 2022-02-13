@@ -22,12 +22,11 @@ function generatePassword() {
 
 function startServer() {
     console.log(`Open a web browser and navigate to localhost on port ${port}`);
-    let msg = showDate();
     http.createServer((req, res) => {
         res.writeHead(200, { 'Content-Type': 'text/html' });
         res.write('<meta http-equiv="refresh" content="12"/>');
         res.write("<title>2FA Passcode Generator</title>");
-        res.write("<section style='font-family: Montserrat, sans-serif; text-align: center; margin-top: 35vh;'> <h1>2FA random password generator</h1><h3>" + msg + "</h3>" + '<br>');
+        res.write("<section style='font-family: Montserrat, sans-serif; text-align: center; margin-top: 35vh;'> <h1>2FA random password generator</h1><h3>" + showDate() + "</h3>" + '<br>');
         res.write('<strong>Your password*</strong><br> <p style="background-color: powderblue; width: 10vw; margin-left: 45%;">' + generatePassword() + '</p><br>');
         res.write("<p style='font-size: 12px;'><em><br><br><br><br>*Password valid for 12 seconds, or until refresh.</em></p></section>");
         res.end();
